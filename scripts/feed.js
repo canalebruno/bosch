@@ -17,7 +17,7 @@ const mensagens = [
 ]
 
 function constructFeed() {
-  const feedElement = document.getElementById('feed-container')
+  const feedElement = document.getElementById('divFeed')
   feedElement.innerHTML = ""
 
   mensagens.sort((a,b) => b.date - a.date)
@@ -36,7 +36,16 @@ function constructFeed() {
 }
 
 function handlePost() {
-  const newPost = document.getElementById('newPost').value
+  const newMessage = document.getElementById('newPost').value
+
+  const newPost = {
+    user: 'perfil-teste',
+    date: new Date(),
+    message: newMessage
+  }
+
+  mensagens.push(newPost)
+  constructFeed()
 }
 
 constructFeed()

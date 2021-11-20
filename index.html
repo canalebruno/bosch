@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
+    <script src="scripts/feed.js" defer></script>
     <title>Feed de notícias</title>
 </head>
 
 <body>
     
-    <textarea placeholder="O que você está pensando?"></textarea>
+    <textarea placeholder="O que você está pensando?" id='newPost'></textarea>
     <br>
     <br>
     <img src="https://pm1.narvii.com/7695/5394b04a125258854536613d83a56314c49bc436r1-800-451v2_hq.jpg" />
     <br>
     <br>
-    <button>Publicar</button>
+    <button onclick="handlePost()">Publicar</button>
     <div id = "divFeed"></div>
 </body>
 </html>
