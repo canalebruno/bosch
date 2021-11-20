@@ -4,10 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/global.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Login</h1>
-    
+<div id = "divId">
+    <h1>Autenticação</h1>
+    <h2>Informe seu login e senha</h2>
+    <br>
+    <h1>-------USE SEMPRE CTRL+SHIFT+R-------</h1>
+    <br>
+    <br>
+    <input type="text" size="25" placeholder="Login" id="id_usuario" /><h4 id="status_id"></h4>
+    <input type="text" size="25" placeholder="Senha" id="senha_usuario" /><h4 id="status_senha"></h4>
+    <br>
+    <br>
+    <button onclick="autenticar()">Entrar</button>
+    <br>
+    <br>
+    <button onclick="location.href='cadastro.html'"> Cadastrar-se</button>
+</div>
+
 </body>
 </html>

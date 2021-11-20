@@ -1,0 +1,24 @@
+:root {
+    --cor-principal: #df5c7b;
+}
+
+body{
+    margin: 100px;
+}
+
+#divId{
+    width: 100%;
+    height: 100%;
+    background-color: blanchedalmond;
+    text-align: center;
+}
+
+.card{
+    width: 200px;
+    height: 250px;
+    margin: 5px;
+    background-color: #03719c;
+    float: left ;
+    border-radius: 10px;
+    text-align: center;
+}
